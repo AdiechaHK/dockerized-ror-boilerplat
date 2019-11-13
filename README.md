@@ -4,9 +4,9 @@
 
 your system must be installed the following things
 
-- `docker` if not then this (link)[https://docs.docker.com/get-started/] can be helpful
+- `docker` if not then this [link](https://docs.docker.com/get-started/) can be helpful
 
-- `docker-compose` if not then this (link)[https://docs.docker.com/compose/install/] can be helpful 
+- `docker-compose` if not then this [link](https://docs.docker.com/compose/install/) can be helpful 
 
 
 
