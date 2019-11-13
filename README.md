@@ -1,24 +1,27 @@
-# README
+# How to run dockerized rails app
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Prerequisites
 
-Things you may want to cover:
+your system must be installed the following things
 
-* Ruby version
+- `docker` if not then this (link)[https://docs.docker.com/get-started/] can be helpful
 
-* System dependencies
+- `docker-compose` if not then this (link)[https://docs.docker.com/compose/install/] can be helpful 
 
-* Configuration
 
-* Database creation
 
-* Database initialization
+## Build Image and make it running.
 
-* How to run the test suite
+- Build image
 
-* Services (job queues, cache servers, search engines, etc.)
+```
+docker build -t railsapp_web .
+```
 
-* Deployment instructions
+- Make all services up (web and database for this case)
 
-* ...
+```
+docker-compose up -d
+```
+
+- Now your app must be running fine over here `http://127.0.0.1:3001`
