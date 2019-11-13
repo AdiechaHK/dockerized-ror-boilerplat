@@ -1,0 +1,27 @@
+version: "2"
+
+services:
+  web:
+    build: .
+    volumes:
+      - .:/apps/test
+    working_dir: /apps/test
+    command: bundle exec puma
+    expose:
+      - 3000
+    ports:
+      - 3001:3000
+    networks:
+      - app-network
+  db:
+    image: mysql:5.7.22
+    ports:
+      - 3306:3306
+    environment:
+      MYSQL_ALLOW_EMPTY_PASSWORD: 'yes'
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge
