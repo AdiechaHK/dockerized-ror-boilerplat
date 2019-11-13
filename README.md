@@ -10,7 +10,13 @@ your system must be installed the following things
 
 
 
-## Build Image and make it running.
+## Run Dockerized app.
+
+- Clone project
+```
+git clone git@github.com:AdiechaHK/dockerized-ror-boilerplat.git && cd dockerized-ror-boilerplat
+```
+
 
 - Build image
 
